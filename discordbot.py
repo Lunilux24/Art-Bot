@@ -2,7 +2,7 @@
 
 import keys
 import discord
-from main import request
+from main import get_tweet_id
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -21,7 +21,7 @@ async def on_message(message):
         return
 
     if message.content.startswith("$tweet"):
-        await message.channel.send(request())
+        await message.channel.send(f"https://twitter.com/user/status/{get_tweet_id()}")
 
 
-client.run(keys.TOKEN)
+client.run(keys.token)

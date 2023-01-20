@@ -3,7 +3,7 @@ import keys
 import random as r
 import json
 import time
-import Users_and_access_time
+from random_user import get_random_user
 
 auth = tweepy.OAuth1UserHandler(
    keys.api_key, keys.api_secret, keys.access_token, keys.access_secret
@@ -11,16 +11,18 @@ auth = tweepy.OAuth1UserHandler(
 
 api = tweepy.API(auth)
     
-def request():
+def get_tweet_id():
    auth = tweepy.OAuth1UserHandler(
    keys.api_key, keys.api_secret, keys.access_token, keys.access_secret
    )
 
    api = tweepy.API(auth)
-   
-   Users_and_access_time.main()
 
    # Get tweets from a specific account
-   tweets = api.user_timeline(screen_name= Users_and_access_time.random_username, count=1)
-    
-   return tweets[0].extended_entities['media'][0]['expanded_url']
+
+   while True:
+      tweets = api.user_timeline(screen_name=get_random_user(), count=5)
+
+      for tweet in tweets:
+         if(not tweet.in_reply_to_status_id):
+            return tweet.id_str if not hasattr(tweet, "retweeted_status") else tweet.retweeted_status.id_str
