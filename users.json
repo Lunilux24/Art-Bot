@@ -1,18 +1,18 @@
 [
     {
         "username": "zutsuuyaku1",
-        "selectable_for_random_user": true
+        "selectable_for_random_user": "default"
     },
     {
         "username": "kokounene",
-        "selectable_for_random_user": true
+        "selectable_for_random_user": "default"
     },    
     {
         "username": "hood_x_art",
-        "selectable_for_random_user": true
+        "selectable_for_random_user": "default"
     },    
     {
         "username": "Hinaki0102",
-        "selectable_for_random_user": true
+        "selectable_for_random_user": "default"
     }
 ]

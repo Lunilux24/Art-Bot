@@ -18,8 +18,9 @@ def request():
 
    api = tweepy.API(auth)
    
-   #x = Users_and_access_time.random_user()
+   Users_and_access_time.main()
+
    # Get tweets from a specific account
-   tweets = api.user_timeline(screen_name= "zutsuuyaku1", count=1)
+   tweets = api.user_timeline(screen_name= Users_and_access_time.random_username, count=1)
     
    return tweets[0].extended_entities['media'][0]['expanded_url']
