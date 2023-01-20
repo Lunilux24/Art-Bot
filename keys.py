@@ -1,7 +1,0 @@
-api_key = "ZXu2tZf9g5PRp22dgjTCbjHNB"
-api_secret = "Lx38UPVdsLfdHn3iDyaTMQP1ychiZ5B1gk7ax9tMh9oZCu41WJ"
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAI1OlQEAAAAAGowQtfcD0e47czGBtkAJ6Umd6Lg%3DJZKSkiMkMHzGHpcg1MB8AHVjti9JFfnIEzNXxZx0mh6b04fYhR"
-client_id = "bjF3Vkx6S2JqRXVRVTNjOWJxNlI6MTpjaQ"
-client_secret = "Rt84NvunXz3pprKE9O-NZXQLxsntNLC2U1-jJumLT7XT5xwRSo"
-access_token = "1535487261856239617-XtKQb3TWrcxk0xQOZLqpsmnfiwAw3w"
-access_secret = "IYL7WcJtL1RxVEUsm0g1DzGEduHATm8y4sln8l6U9oisO"
