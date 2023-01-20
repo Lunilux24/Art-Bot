@@ -2,6 +2,7 @@
 
 import keys
 import discord
+from main import request
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -19,8 +20,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith("$hello"):
-        await message.channel.send("Hello!")
+    if message.content.startswith("$tweet"):
+        await message.channel.send(request())
 
 
 client.run(keys.TOKEN)
